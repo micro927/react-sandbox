@@ -14,12 +14,16 @@ import WebFooter from './components/webfooter'
 function App() {
 
 
+
     return (
         <>
             <section>
                 <WebNavbar />
                 <Container className='main'>
                     <Row>
+                        <Col>
+                            asdsasdasas
+                        </Col>
                         <Col><WebCarousel /></Col>
                     </Row>
 
