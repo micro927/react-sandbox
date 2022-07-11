@@ -9,12 +9,7 @@ import WebNavbar from './components/webnavbar'
 import WebCarousel from './components/webcarousel'
 import WebFooter from './components/webfooter'
 
-
-
 function App() {
-
-
-
     return (
         <>
             <section>

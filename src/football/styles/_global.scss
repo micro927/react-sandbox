@@ -1,0 +1,29 @@
+// scss-docs-start color-variables
+
+
+
+
+// scss-docs-start theme-color-variables
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: $dark;
+    color: white;
+}
+
+main {
+    @extend .px-4, ;
+    @extend .py-5;
+    min-height: 90vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+.contentCard {
+    background-color: $light;
+    color: $dark;
+
+}
