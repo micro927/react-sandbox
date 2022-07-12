@@ -1,4 +1,8 @@
-// import { StrictMode } from "react";
+import {
+    // StrictMode,
+    // createContext,
+    useState,
+} from "react"
 // import { createRoot } from "react-dom/client";
 import {
     Routes,
@@ -10,8 +14,9 @@ import {
 import './styles/index.scss'
 
 //Components
-import FirstPage from "./components/firstpage";
-import Navbar from "./components/navbar";
+import Welcome from "./components/Welcome";
+import Navbar from "./components/Navbar";
+import NavFooter from "./components/NavFooter";
 
 // Use this if move to root(src) folder
 // const rootElement = document.getElementById("root");
@@ -26,19 +31,22 @@ import Navbar from "./components/navbar";
 // )
 
 function FootballApp() {
+    const [country, setCountry] = useState('Thailand')
+
     return (
         <>
             <header>
                 <Navbar />
             </header>
             <main>
-                {/* <BrowserRouter> */}
+                <input onChange={(e) => setCountry(e.target.value)} value={country} />
                 <Routes>
-                    <Route path="/" element={<FirstPage />} />
+                    <Route path="/" element={<Welcome country={country} />} />
                 </Routes>
-                {/* </BrowserRouter> */}
             </main>
-            <footer></footer>
+            <footer>
+                <NavFooter />
+            </footer>
         </>
     )
 }

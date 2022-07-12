@@ -5,6 +5,9 @@
 
 // scss-docs-start theme-color-variables
 
+header {
+    height: 7vh;
+}
 
 body {
     font-family: 'Kanit', sans-serif;
@@ -19,11 +22,10 @@ main {
 }
 
 footer {
-    height: 10vh;
+    height: 3vh;
 }
 
 .contentCard {
-    background-color: $light;
-    color: $dark;
-
+    background-color: inherit;
+    border-color: $gray-800;
 }
